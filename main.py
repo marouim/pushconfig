@@ -6,4 +6,5 @@ print "test"
 
 print 'commit2'
 
-print 'fonctionnel'
+if True:
+    print 'fonctionnel'
