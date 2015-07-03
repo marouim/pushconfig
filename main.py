@@ -8,10 +8,6 @@ import sys
 from devicelist import DeviceList
 
 
-<<<<<<< HEAD
-if True:
-    print 'fonctionnel'
-=======
 def query_yes_no(question, default="oui"):
     """Ask a yes/no question via raw_input() and return their answer.
 
@@ -58,14 +54,12 @@ print (tabulate(jdevices['devices'], tablefmt="fancy_grid"))
 
 
 print ("Les commandes suivantes seront appliqués sur les device ci-haut.")
-query_yes_no("Voulez-vous continuer ?")
 
-
-devlist = DeviceList(jdevices['devices'])
-devlist.pushconfig(jdevices['config']['commands'])
+if query_yes_no("Voulez-vous continuer ?"):
+    devlist = DeviceList(jdevices['devices'])
+    devlist.pushconfig(jdevices['config']['commands'])
 
 # print (jdevices)
 
 
 print ("end")
->>>>>>> fork1
