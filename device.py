@@ -19,11 +19,10 @@ class Device:
         self.model = model
 
     def pushconfig(self, config):
-        if self.model == 'cisco':
-            print ("Applique configuration: %s - %s - %s" % (self.hostname, self.ipaddress, self.model))
-            xmlstr = netconfXML.get_xml(config)
-            print (xmlstr)
-            m = manager.connect_ssh(self.ipaddress, port=22, username='martin.ouimet', password='&sc1547198', device_params={'name': 'csr'})
-            m.edit_config(target='running', config=xmlstr)
-            m.copy_config(target='startup', source='running')
+        print ("Applique configuration: %s - %s - %s" % (self.hostname, self.ipaddress, self.model))
+        xmlstr = netconfXML.get_xml(config)
+        print (xmlstr)
+        m = manager.connect_ssh(self.ipaddress, port=22, username='martin.ouimet', password='&sc1547198', device_params={'name': 'csr'})
+        m.edit_config(target='running', config=xmlstr)
+        m.copy_config(target='startup', source='running')
 
