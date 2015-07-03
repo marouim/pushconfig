@@ -45,18 +45,29 @@ fdevices = open('devices.json', mode='r')
 jdevices = json.loads(fdevices.read())
 fdevices.close()
 
+devtype = raw_input("Entrez le model a deployer [cisco,ciscoswitch,ciscowap,juniper]")
+
+
+j2devices = []
+
+for dev in jdevices['devices']:
+    if dev['model'] == devtype:
+        j2devices.append(dev)
+
+
 print "Configuration"
 print (tabulate(jdevices['config'], tablefmt="fancy_grid"))
 print ""
 print "Devices"
-print (tabulate(jdevices['devices'], tablefmt="fancy_grid"))
+# print (tabulate(jdevices['devices'], tablefmt="fancy_grid"))
+print (tabulate(j2devices, tablefmt="fancy_grid"))
 
 
 
 print ("Les commandes suivantes seront appliqués sur les device ci-haut.")
 
 if query_yes_no("Voulez-vous continuer ?"):
-    devlist = DeviceList(jdevices['devices'])
+    devlist = DeviceList(j2devices)
     devlist.pushconfig(jdevices['config']['commands'])
 
 # print (jdevices)
