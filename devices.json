@@ -1,0 +1,160 @@
+{
+  "config": {
+    "commands": [
+      "line vty 0 4",
+      "no access-class ACL-GESTION in vrf-also"
+    ]
+  },
+"devices": [
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lch-rtr01",
+      "ipaddress": "172.24.10.1"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lpv-rtr01",
+      "ipaddress": "172.24.10.33"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lse-rtr01",
+      "ipaddress": "172.24.10.65"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lst-rtr01",
+      "ipaddress": "172.24.10.97"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lbl-rtr01",
+      "ipaddress": "172.24.10.129"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lte-rtr01",
+      "ipaddress": "172.24.10.161"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lre-rtr01",
+      "ipaddress": "172.24.10.193"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-ljo-rtr01",
+      "ipaddress": "172.24.10.225"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lla-rtr01",
+      "ipaddress": "172.24.11.1"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lsj-rtr01",
+      "ipaddress": "172.24.11.33"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lsa-rtr01",
+      "ipaddress": "172.24.11.65"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-ssa-rtr01",
+      "ipaddress": "172.24.11.97"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lau-rtr01",
+      "ipaddress": "172.24.11.129"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lfa-rtr01",
+      "ipaddress": "172.24.11.161"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-ldu-rtr01",
+      "ipaddress": "172.24.11.193"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lma-rtr01",
+      "ipaddress": "172.24.11.225"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-sjo-rtr01",
+      "ipaddress": "172.24.12.1"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lsd-rtr01",
+      "ipaddress": "172.24.12.33"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-cap-rtr01",
+      "ipaddress": "172.24.12.97"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-llo-rtr01",
+      "ipaddress": "172.24.12.193"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lsr-rtr01",
+      "ipaddress": "172.24.12.225"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-ldm-rtr01",
+      "ipaddress": "172.24.13.1"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lvm-rtr01",
+      "ipaddress": "172.24.13.33"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-ltr-rtr01",
+      "ipaddress": "172.24.13.65"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lto-rtr01",
+      "ipaddress": "172.24.13.97"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-lmo-rtr01",
+      "ipaddress": "172.24.13.193"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-gao-rtr01",
+      "ipaddress": "172.24.13.225"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-sdl-rtr01",
+      "ipaddress": "172.24.14.1"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-gae-rtr01",
+      "ipaddress": "172.24.14.33"
+    },
+    {
+      "model": "cisco",
+      "hostname": "tecrn-sjn-rtr01",
+      "ipaddress": "172.24.14.65"
+    }
+  ]
+}
